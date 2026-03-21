@@ -14,24 +14,21 @@ const rooms = [
     id: 1,
     name: "Deluxe Room",
     description: "Spacious room with garden view and modern amenities.",
-    image:
-      "https://i.pinimg.com/1200x/9d/72/05/9d720537d00d52a011e1051b77b709c4.jpg",
+    image: "src/HotelImages/FamilySuite.jpeg",
     price: "4,500",
   },
   {
     id: 2,
     name: "Premium Room",
     description: "Luxury room with private balcony and forest views.",
-    image:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800",
+    image: "src/HotelImages/DeluxeRoom.jpeg",
     price: "6,000",
   },
   {
     id: 3,
     name: "Luxury Cottage",
     description: "Independent cottage for ultimate privacy and comfort.",
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800",
+    image: "src/HotelImages/PremiumRoom.jpeg",
     price: "8,500",
   },
 ];
@@ -99,7 +96,7 @@ const Home = () => {
             </div>
             <div className="about-img">
               <img
-                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=800"
+                src="src/HotelImages/WhatsApp Image 2026-03-20 at 11.48.55 AM (2).jpeg"
                 alt="Resort View"
               />
             </div>
