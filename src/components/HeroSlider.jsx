@@ -5,22 +5,19 @@ import { motion, AnimatePresence } from "motion/react";
 const slides = [
   {
     id: 1,
-    image:
-      "https://pix10.agoda.net/hotelImages/655/6558910/6558910_19020201220071964066.jpg?ca=7&ce=1&s=414x232&ar=16x9",
+    image: "src/HotelImages/hotelFront.jpeg",
     title: "Escape Into Nature",
     subtitle: "Luxury Stay Near Jim Corbett National Park",
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=1920",
+    image: "src/HotelImages/hotelSunRiseView.jpeg",
     title: "Experience The Wild",
     subtitle: "Unforgettable Safari Adventures Await",
   },
   {
     id: 3,
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1920",
+    image: "src/HotelImages/hotelSlideriamge3.jpeg",
     title: "Luxury Meets Wilderness",
     subtitle: "Premium Cottages with Modern Amenities",
   },

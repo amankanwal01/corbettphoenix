@@ -8,8 +8,7 @@ const allRooms = [
     name: "Deluxe Room",
     description:
       "Perfect for couples, our Deluxe rooms offer a cozy atmosphere with garden views and modern comforts.",
-    image:
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800",
+    image: "src/HotelImages/DeluxeRoom.jpeg",
     plans: [
       {
         id: "d1",
@@ -46,8 +45,7 @@ const allRooms = [
     name: "Premium Room",
     description:
       "Experience luxury with our Premium rooms featuring private balconies overlooking the dense Corbett forest.",
-    image:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800",
+    image: "src/HotelImages/PremiumRoom.jpeg",
     plans: [
       {
         id: "p1",
@@ -84,8 +82,7 @@ const allRooms = [
     name: "Luxury Cottage",
     description:
       "Our independent Luxury Cottages provide ultimate privacy with high-end interiors and premium amenities.",
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800",
+    image: "src/HotelImages/DeluxeRoom.jpeg",
     plans: [
       {
         id: "l1",
@@ -126,8 +123,7 @@ const allRooms = [
     name: "Family Suite",
     description:
       "Ideal for families, these suites offer two interconnected rooms with a common living area and forest view.",
-    image:
-      "https://images.unsplash.com/photo-1591088398332-8a77d399e80c?auto=format&fit=crop&q=80&w=800",
+    image: "src/HotelImages/PremiumRoom.jpeg",
     plans: [
       {
         id: "f1",
