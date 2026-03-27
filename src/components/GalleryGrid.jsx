@@ -3,7 +3,7 @@ import React from "react";
 const images = [
   {
     id: 1,
-    url: "../public/HotelImages/hotelSunRiseView.jpeg",
+    url: "/HotelImages/hotelSunRiseView.jpeg",
     large: true,
   },
   {
