@@ -3,7 +3,7 @@ import React from "react";
 const images = [
   {
     id: 1,
-    url: "src/HotelImages/WhatsApp Image 2026-03-20 at 2.40.28 AM (1).jpeg",
+    url: "../public/HotelImages/hotelSunRiseView.jpeg",
     large: true,
   },
   {
