@@ -14,21 +14,21 @@ const rooms = [
     id: 1,
     name: "Deluxe Room",
     description: "Spacious room with garden view and modern amenities.",
-    image: "src/HotelImages/FamilySuite.jpeg",
+    image: "../public/HotelImages/FamilySuite.jpeg",
     price: "4,500",
   },
   {
     id: 2,
     name: "Premium Room",
     description: "Luxury room with private balcony and forest views.",
-    image: "src/HotelImages/DeluxeRoom.jpeg",
+    image: "../public/HotelImages/DeluxeRoom.jpeg",
     price: "6,000",
   },
   {
     id: 3,
     name: "Luxury Cottage",
     description: "Independent cottage for ultimate privacy and comfort.",
-    image: "src/HotelImages/PremiumRoom.jpeg",
+    image: "public/HotelImages/PremiumRoom.jpeg",
     price: "8,500",
   },
 ];
@@ -96,7 +96,7 @@ const Home = () => {
             </div>
             <div className="about-img">
               <img
-                src="src/HotelImages/WhatsApp Image 2026-03-20 at 11.48.55 AM (2).jpeg"
+                src="public/HotelImages/WhatsApp Image 2026-03-20 at 11.48.55 AM (2).jpeg"
                 alt="Resort View"
               />
             </div>

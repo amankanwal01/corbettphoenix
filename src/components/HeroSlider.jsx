@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from "motion/react";
 const slides = [
   {
     id: 1,
-    image: "src/HotelImages/hotelFront.jpeg",
+    image: "../public/HotelImages/hotelFront.jpeg",
     title: "Escape Into Nature",
     subtitle: "Luxury Stay Near Jim Corbett National Park",
   },
   {
     id: 2,
-    image: "src/HotelImages/hotelSunRiseView.jpeg",
+    image: "../public/HotelImages/hotelSunRiseView.jpeg",
     title: "Experience The Wild",
     subtitle: "Unforgettable Safari Adventures Await",
   },
   {
     id: 3,
-    image: "src/HotelImages/hotelSlideriamge3.jpeg",
+    image: "../public/HotelImages/hotelSlideriamge3.jpeg",
     title: "Luxury Meets Wilderness",
     subtitle: "Premium Cottages with Modern Amenities",
   },
