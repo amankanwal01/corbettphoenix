@@ -29,6 +29,7 @@ import "./styles/cards.css";
 import "./styles/layout.css";
 import "./styles/forms.css";
 import "./styles/footer.css";
+import AboutPage from "./pages/AboutUs";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -55,6 +56,7 @@ function AppContent() {
           <Route path="/packages" element={<Packages />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/policies" element={<Policies />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

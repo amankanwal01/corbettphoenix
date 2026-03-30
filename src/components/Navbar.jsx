@@ -131,7 +131,15 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
-            <Link to="/contact" className="nav-book-btn">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              About Us
+            </NavLink>
+            <Link to="/about" className="nav-book-btn">
               Book Now
             </Link>
           </div>

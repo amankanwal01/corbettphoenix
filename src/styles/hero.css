@@ -3,27 +3,21 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  background-color: #000; /* Fallback color */
 }
 
-.hero-slider {
-  height: 100%;
-  width: 100%;
-}
-
-.hero-slide {
+/* New Video Styling */
+.hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-slide.active {
-  opacity: 1;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero-overlay {
@@ -32,18 +26,20 @@
   left: 0;
   width: 100%;
   height: 100%;
+  /* Darker gradient to ensure text pops over moving video */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.196)
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
   );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--white);
+  color: white; /* Changed from var to standard for safety */
   padding: 0 20px;
+  z-index: 1; /* Sits above the video */
 }
 
 .hero-content {
@@ -56,6 +52,7 @@
   margin-bottom: 20px;
   letter-spacing: -2px;
   line-height: 1.1;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Added for better legibility */
 }
 
 .hero-subtitle {
