@@ -7,10 +7,10 @@ import {
   Leaf,
   Heart,
 } from "lucide-react";
-import "../styles/AboutPage.css";
+import "../styles/About.css";
 import ReviewSection from "../components/ReviewSection";
 
-const AboutPage = () => {
+const About = () => {
   const [current, setCurrent] = useState(0);
   const reviews = [
     {
@@ -134,4 +134,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
