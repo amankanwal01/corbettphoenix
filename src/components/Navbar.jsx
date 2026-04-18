@@ -57,10 +57,7 @@ const Navbar = () => {
               <Mail size={14} />
               <span>info@corbettphoenix.com</span>
             </div>
-            <div className="top-bar-item">
-              <Mail size={14} />
-              <span>navinpana@gmail.com</span>
-            </div>
+
             <div className="top-bar-item">
               <MapPin size={14} />
               <span>Jim Corbett, Uttarakhand</span>

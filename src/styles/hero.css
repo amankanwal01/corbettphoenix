@@ -14,23 +14,15 @@
 ================================ */
 .hero-video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-
   z-index: 0;
-  pointer-events: none; /* prevents accidental clicks */
-
+  pointer-events: none;
   filter: brightness(0.85) contrast(1.1);
 }
-
 /* ================================
    OVERLAY
 ================================ */
@@ -65,23 +57,27 @@
 }
 
 /* Title */
+/* Title */
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(1.5rem, 8vw, 3rem);
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.15rem;
-
-  margin-bottom: 20px;
-
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
 }
 
 /* Subtitle */
 .hero-subtitle {
-  /* font-size: clamp(1.1rem, 2.5vw, 1rem); */
-  font-weight: 100;
-  margin-bottom: 40px;
+  font-size: clamp(1rem, 3vw, 1rem);
+  font-weight: 300;
+  margin-bottom: 35px;
   opacity: 0.9;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Buttons */

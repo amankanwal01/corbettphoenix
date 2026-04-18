@@ -254,3 +254,8 @@
     padding: 20px 0;
   }
 }
+@media (max-width: 480px) {
+  .top-bar-info {
+    display: none; /* Mobile par lambi emails hide kar do, space bachega */
+  }
+}
