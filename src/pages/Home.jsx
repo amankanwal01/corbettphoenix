@@ -8,6 +8,9 @@ import PackageCard from "../components/PackageCard";
 import GalleryGrid from "../components/GalleryGrid";
 import Testimonials from "../components/Testimonials";
 import CTASection from "../components/CTASection";
+import StatsSection from "../components/StatsSection";
+import NearbyAttractions from "../components/NearbyAttractions";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 const rooms = [
   {
@@ -80,15 +83,17 @@ const Home = () => {
                 Welcome to Corbett Phoenix Resort
               </h2>
               <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-                Nestled in the heart of the wilderness, Corbett Phoenix Resort
-                is your gateway to the legendary Jim Corbett National Park. We
-                offer a perfect blend of luxury, comfort, and nature.
+                Your Gateway to Peace in the Heart of Nature Nestled in the lush
+                greens of Awala Khot, Kotabagh, just a short drive from the
+                enchanting Corbett National Park, Phoenix Corbet is a tranquil
+                escape for nature lovers, adventure seekers, and those looking
+                to disconnect from the hustle of city life.
               </p>
               <p style={{ marginBottom: "30px", color: "var(--text-light)" }}>
-                Our resort is designed to provide an immersive experience of the
-                jungle while ensuring you enjoy the finest hospitality. Whether
-                you're here for an adventurous safari or a peaceful retreat, we
-                have everything to make your stay memorable.
+                Surrounded by the majestic hills of Nainital and the serene
+                landscapes of Uttarakhand, our hotel blends rustic charm with
+                modern comfort, offering a unique experience that rejuvenates
+                your body, mind, and soul.
               </p>
               <Link to="/contact" className="btn btn-primary">
                 Learn More
@@ -124,16 +129,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Safari Experiences */}
+      {/* Why do you choose us  */}
       <section className="section-padding">
-        <div className="container">
-          <h2 className="section-title">Wild Experiences</h2>
-          <div className="card-grid">
-            {experiences.map((exp) => (
-              <ExperienceCard key={exp.id} experience={exp} />
-            ))}
-          </div>
-        </div>
+        <WhyChooseUs />
       </section>
 
       {/* Amenities */}
@@ -179,55 +177,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section>
+        <NearbyAttractions />
+      </section>
 
-      {/* Nearby Attractions */}
-      <section className="section-padding">
-        <div className="container">
-          <h2 className="section-title">Nearby Attractions</h2>
-          <div className="card-grid">
-            <div className="experience-card">
-              <img
-                src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=800"
-                alt="Garjiya Devi Temple"
-                className="card-img"
-              />
-              <div className="card-content">
-                <h3 className="card-title">Garjiya Devi Temple</h3>
-                <p className="card-desc">
-                  A famous temple located on a large rock in the Kosi River.
-                </p>
-              </div>
-            </div>
-            <div className="experience-card">
-              <img
-                src="https://images.unsplash.com/photo-1590050752117-23a9d7fc6f9c?auto=format&fit=crop&q=80&w=800"
-                alt="Corbett Waterfall"
-                className="card-img"
-              />
-              <div className="card-content">
-                <h3 className="card-title">Corbett Waterfall</h3>
-                <p className="card-desc">
-                  A scenic 60-foot waterfall surrounded by dense teak wood
-                  forest.
-                </p>
-              </div>
-            </div>
-            <div className="experience-card">
-              <img
-                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800"
-                alt="River Kosi"
-                className="card-img"
-              />
-              <div className="card-content">
-                <h3 className="card-title">River Kosi</h3>
-                <p className="card-desc">
-                  Enjoy the serene views and peaceful atmosphere by the Kosi
-                  River.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section
+        className="section-padding"
+        style={{ backgroundColor: "#f9f9f9" }}
+      >
+        <StatsSection />
       </section>
 
       {/* Testimonials */}

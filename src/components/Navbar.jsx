@@ -51,11 +51,15 @@ const Navbar = () => {
           <div className="top-bar-info">
             <div className="top-bar-item">
               <Phone size={14} />
-              <span>+91 98765 43210</span>
+              <span>+91 9761420066</span>
             </div>
             <div className="top-bar-item">
               <Mail size={14} />
               <span>info@corbettphoenix.com</span>
+            </div>
+            <div className="top-bar-item">
+              <Mail size={14} />
+              <span>navinpana@gmail.com</span>
             </div>
             <div className="top-bar-item">
               <MapPin size={14} />
@@ -99,21 +103,21 @@ const Navbar = () => {
             >
               Rooms
             </NavLink>
+            {/* <NavLink
+              to="/activities"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            > */}
+            {/* activities
+            </NavLink> */}
             <NavLink
-              to="/safari"
+              to="/services"
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
             >
-              Safari
-            </NavLink>
-            <NavLink
-              to="/packages"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Packages
+              Our Services
             </NavLink>
             <NavLink
               to="/gallery"

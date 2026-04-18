@@ -1,80 +1,105 @@
+/* ================================
+   HERO SECTION
+================================ */
 .hero {
-  height: 100vh;
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
-  background-color: #000; /* Fallback color */
+  background: #000; /* fallback */
 }
 
-/* New Video Styling */
+/* ================================
+   VIDEO BACKGROUND
+================================ */
 .hero-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+
   width: auto;
   height: auto;
+  min-width: 100%;
+  min-height: 100%;
+
   transform: translate(-50%, -50%);
   object-fit: cover;
+
   z-index: 0;
+  pointer-events: none; /* prevents accidental clicks */
+
+  filter: brightness(0.85) contrast(1.1);
 }
 
+/* ================================
+   OVERLAY
+================================ */
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Darker gradient to ensure text pops over moving video */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.6)
-  );
+  inset: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   text-align: center;
-  color: white; /* Changed from var to standard for safety */
   padding: 0 20px;
-  z-index: 1; /* Sits above the video */
+  color: #fff;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.75)
+  );
+
+  z-index: 1;
 }
 
+/* ================================
+   CONTENT
+================================ */
 .hero-content {
-  max-width: 800px;
+  max-width: 820px;
+  width: 100%;
 }
 
+/* Title */
 .hero-title {
-  font-size: 4.5rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-  letter-spacing: -2px;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
   line-height: 1.1;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Added for better legibility */
+  letter-spacing: 0.15rem;
+
+  margin-bottom: 20px;
+
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
+/* Subtitle */
 .hero-subtitle {
-  font-size: 1.5rem;
+  /* font-size: clamp(1.1rem, 2.5vw, 1rem); */
+  font-weight: 100;
   margin-bottom: 40px;
-  font-weight: 400;
   opacity: 0.9;
 }
 
+/* Buttons */
 .hero-btns {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
+/* ================================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 3rem;
+  .hero-overlay {
+    padding: 0 16px;
   }
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
+
   .hero-btns {
     flex-direction: column;
     width: 100%;

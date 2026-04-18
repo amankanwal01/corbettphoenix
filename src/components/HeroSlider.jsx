@@ -5,18 +5,18 @@ import { motion, AnimatePresence } from "motion/react";
 const slides = [
   {
     id: 1,
-    title: "Escape Into Nature",
-    subtitle: "Luxury Stay Near Jim Corbett National Park",
+    title: "Discover Our Stunning Accommodations",
+    subtitle: "Explore Your Room Options",
   },
   {
     id: 2,
-    title: "Experience The Wild",
-    subtitle: "Unforgettable Safari Adventures Await",
+    title: "Luxury Meets",
+    subtitle: "Premium Cottages with Modern Amenities",
   },
   {
     id: 3,
-    title: "Luxury Meets Wilderness",
-    subtitle: "Premium Cottages with Modern Amenities",
+    title: "Discover Our Stunning Accommodations",
+    subtitle: "Explore Your Room Options",
   },
 ];
 

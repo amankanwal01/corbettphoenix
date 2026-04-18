@@ -14,8 +14,8 @@ import WhatsAppButton from "./components/WhatsAppButton";
 // Pages
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
-import Safari from "./pages/Safari";
-import Packages from "./pages/Packages";
+import Activities from "./pages/Activities";
+import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Policies from "./pages/Policies";
@@ -52,8 +52,8 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />
-          <Route path="/safari" element={<Safari />} />
-          <Route path="/packages" element={<Packages />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
