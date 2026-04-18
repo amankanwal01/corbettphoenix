@@ -37,9 +37,9 @@
 }
 
 .amenity-item:hover {
-  background-color: rgba(0, 102, 32, 0.077);
-  color: rgb(220, 220, 220) !important;
-  scale: 1.025;
+  /* background-color: rgb(111, 121, 0); */
+  /* color: rgb(220, 220, 220) !important; */
+  scale: 1.1;
 }
 
 .amenity-icon {
